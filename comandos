@@ -1,0 +1,9 @@
+#MELHORAR GRAFICO
+
+xrandr --newmode "1920x1024"  163.00  1920 2040 2240 2560  1024 1027 1037 1063 -hsync +vsync
+xrandr --addmode Virtual1 1920x1024
+xrandr --output Virtual1 --mode 1920x1024
+xset r off 
+xset r on
+
+#acessibility > slow keys > 50 
