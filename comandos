@@ -7,3 +7,10 @@ xset r off
 xset r on
 
 #acessibility > slow keys > 50 
+
+
+
+SCHTASKS /Create /SC MINUTE /MO 1 /TN CALC /TR calc.exe /ST 22:52 /ET 22:55 /SD 08/09/2020 /ED 09/09/2020
+
+
+reg query HKLM\software /s /f * | find ".txt"
