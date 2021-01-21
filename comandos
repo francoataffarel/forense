@@ -18,6 +18,8 @@ xset r on
 
 #acessibility > slow keys > 50 
 
+x11vnc -capslock -nomodtweak -o /var/log/x11vnc.log -forever -bg
+
 
 
 SCHTASKS /Create /SC MINUTE /MO 1 /TN CALC /TR calc.exe /ST 22:52 /ET 22:55 /SD 08/09/2020 /ED 09/09/2020
