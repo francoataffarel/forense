@@ -4,19 +4,13 @@ xrandr --newmode "1920x1080" 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsy
 xrandr --addmode Virtual1 1920x1080
 xrandr --output Virtual1 --mode 1920x1080
 
-
-xrandr --newmode "2560x1440_60.00" 311.83 2560 2744 3024 3488 1440 1441 1444 1490 -HSync +Vsync
-xrandr --addmode Virtual-1 "2560x1440_60.00"
-xrandr --output Virtual-1 -s "2560x1440_60.00"
+xrandr --newmode "2560x1391" 250.566   2560 2610 2660 2710  1391 1441 1491 1541  -HSync +Vsync
+xrandr --addmode Virtual1 2560x1391
+xrandr --output Virtual1 --mode 2560x1391
 
 xrandr --newmode "2560x1391" 250.566   2560 2610 2660 2710  1391 1441 1491 1541  -HSync +Vsync
 xrandr --addmode Virtual-1 2560x1391
 xrandr --output Virtual-1 --mode 2560x1391
-
-
-xrandr --newmode "2560x1391" 250.566   2560 2610 2660 2710  1391 1441 1491 1541  -HSync +Vsync
-xrandr --addmode Virtual1 2560x1391
-xrandr --output Virtual1 --mode 2560x1391
 
 xset r off 
 xset r on
@@ -25,9 +19,6 @@ xset r on
 
 x11vnc -capslock -nomodtweak -o /var/log/x11vnc.log -forever -bg
 
-
-
 SCHTASKS /Create /SC MINUTE /MO 1 /TN CALC /TR calc.exe /ST 22:52 /ET 22:55 /SD 08/09/2020 /ED 09/09/2020
-
 
 reg query HKLM\software /s /f * | find ".txt"
